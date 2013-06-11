@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Development Tools by jeffects</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Development Tools</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/jeffects/development-tools/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/jeffects/development-tools/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/jeffects/development-tools" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="railsvim" class="anchor" href="#railsvim"><span class="octicon octicon-link"></span></a>Rails.Vim</h1>
+
+<h2>
+<a name="find-a-file-with-tab-completion" class="anchor" href="#find-a-file-with-tab-completion"><span class="octicon octicon-link"></span></a>Find a file (with tab completion)</h2>
+
+<p>:Rfind PostsController
+:Rfind models/article</p>
+
+<h2>
+<a name="goto-file-under-cursor" class="anchor" href="#goto-file-under-cursor"><span class="octicon octicon-link"></span></a>Goto file under cursor</h2>
+
+<p>gf (opens in current window)
+CTRL-W_f (opens in split)</p>
+
+<h2>
+<a name="editing-alternate-files" class="anchor" href="#editing-alternate-files"><span class="octicon octicon-link"></span></a>Editing "alternate" files</h2>
+
+<p>"Alternate" files are usually specs, and their corresponding file:</p>
+
+<ul>
+<li>:A (edit alternate file)</li>
+<li>:AS (in split)</li>
+<li>:AV (in vertical split)</li>
+</ul><h2>
+<a name="editing-related-files" class="anchor" href="#editing-related-files"><span class="octicon octicon-link"></span></a>Editing "related" files</h2>
+
+<p>"Related" files are things like view templates and controllers:</p>
+
+<ul>
+<li>:R (edit related file)</li>
+<li>:RS (in split)</li>
+<li>:RV (in vertical split)</li>
+</ul><h2>
+<a name="summary-of-alternate-and-related-files" class="anchor" href="#summary-of-alternate-and-related-files"><span class="octicon octicon-link"></span></a>Summary of "alternate" and "related" files</h2>
+
+<ul>
+<li>in a model the "alternate" is the spec and the "related" is the schema</li>
+<li>in a controller (method) the "alternate" is the spec and the "related" is the view</li>
+<li>in a view the "alternate" is the spec and the "related" is the controller (method)</li>
+</ul><p>Less frequently used are:</p>
+
+<ul>
+<li>in a migration the "alternate" is the previous migration and the "related" is the next migration</li>
+<li>in config/database.yml the "alternate" is config/routes.rb and the "related" is config/environments/*.rb</li>
+</ul><h2>
+<a name="explicit-jumping-commands" class="anchor" href="#explicit-jumping-commands"><span class="octicon octicon-link"></span></a>Explicit jumping commands</h2>
+
+<p>These all have tab completion, reasonable defaults, and variants for opening in splits (:RS...) and vertical splits (:RV...):</p>
+
+<ul>
+<li>:Rcontroller</li>
+<li>:Renvironment</li>
+<li>:Rfixtures</li>
+<li>:Rhelper</li>
+<li>:Rjavascript</li>
+<li>:Rlayout</li>
+<li>:Rlib</li>
+<li>:Rmailer</li>
+<li>:Rmigration</li>
+<li>:Rmodel</li>
+<li>:Robserver</li>
+<li>:Rtask</li>
+<li>:Rview</li>
+<li>:Rspec</li>
+</ul><h2>
+<a name="rake-integration" class="anchor" href="#rake-integration"><span class="octicon octicon-link"></span></a>Rake integration</h2>
+
+<ul>
+<li>:Rake {task}</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
